@@ -35,9 +35,7 @@ const data = [
 const Emojipedia = () => {
     return (
         <>
-            {data.map((data) => {
-                return <Card key={data.id} {...data} />;
-            })}
+            {data.map(data => <Card key={data.id} {...data} />)}
         </>
     );
 };
